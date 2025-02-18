@@ -57,7 +57,7 @@ export default function HomePage() {
     const createNewTransaction = async () => {
         try {
             const now = new Date().toISOString();
-            // バックエンドへPOST (必要に応じてEMP_CD, STORE_CDなどを送る)
+            // バックエンドへPOST (必要に応じてEMP_CD、STORE_CDなどを送る)
             const body = {
                 DATETIME: now,
                 EMP_CD: 'EMP01',
