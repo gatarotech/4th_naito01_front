@@ -6,7 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": true, // JSファイルの混在を許可
+    "checkJs": true, // JSファイルの型チェック（任意）
+    "outDir": "./dist", // コンパイル後のファイル出力先
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -26,8 +28,10 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "next.config.js"  ],
+    "**/*.tsx",
+    "**/*.js", // 追加
+    "**/*.jsx", // 追加
+    "next.config.js"  ],
   "exclude": [
     "node_modules"
   ]
